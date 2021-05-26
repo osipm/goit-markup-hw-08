@@ -5,25 +5,25 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css">
-  <link rel="stylesheet" href="./css/main.css">
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css" />
+  <link rel="stylesheet" href="./css/main.css" />
   <title>Document</title>
 </head>
 
 <body>
-   <header class="header">
+  <header class="header">
     <div class="header__container">
       <a href="./index.html" class="logo"><span class="logo__cl">Web</span>Studio</a>
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="./index.html" >Студия</a>
+            <a href="./index.html" class="nav__link-accent nav__link">Студия</a>
           </li>
           <li class="nav__item">
-            <a href="./portfolio.html" class="nav__link-accent nav__link">Портфолио</a>
+            <a href="./portfolio.html">Портфолио</a>
           </li>
           <li class="nav__item"><a href="">Контакты</a></li>
         </ul>
@@ -43,6 +43,44 @@
             </svg>+38 096 111 11 11</a>
         </li>
       </ul>
+    </div>
+    <button class="mobile-menu_btn" data-menu-button>
+      <svg class="menu-btn-icon" width="40px" height="40px">
+        <use class="menu-btn-icon-close" href="./imeges/icons.svg#icon-close"></use>
+        <use class="menu-btn-icon-menu" href="./imeges/icons.svg#icon-menu"></use>
+      </svg>
+    </button>
+
+  <!-- mobile-menu -->
+    <div class="mobile-menu" data-menu>
+      <div class="mobile-menu__container">
+            <ul class="mobile-menu__list">
+          <li class="mobile-menu__item">
+            <a href="./index.html" class="mobile-menu__link">Студия</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="mobile-menu__item"><a href="">Контакты</a></li>
+        </ul>
+      </div>
+      <ul class="mobile-menu__contacts">
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__tel" href="tel:+380961111111">
+            +38 096 111 11 11</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__mail" href="mailto:info@devstudio">
+            info@devstudio</a>
+        </li>
+      </ul>
+      <ul class="mobile-menu_social-list">
+        <li class="mobile-menu__social-item">Instagram</li>
+        <li class="mobile-menu__social-item">Twitter</li>
+        <li class="mobile-menu__social-item">Facebook</li>
+        <li class="mobile-menu__social-item">LinkedIn</li>
+      </ul>
+         
     </div>
   </header>
 

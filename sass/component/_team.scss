@@ -3,7 +3,7 @@
 
     &__container{@extend .container }
 
-    &__list{@include card-set;};
+    &__list{@include card-set};
 
     &__item {@include item;
         flex-basis: 100%;

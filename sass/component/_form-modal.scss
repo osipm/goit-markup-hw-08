@@ -63,9 +63,14 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.16;
     color: var(--mein-text-cl);
+
+    @media screen and (min-width:1200px) {
+        font-size: 14px;
+    line-height: 1.71;
+    }
 }
 
 .form-modal__checkbox-link {

@@ -1,9 +1,23 @@
 .filtr{
     &__list {
-        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+
+        @media screen and (min-width:768px) {
+            justify-content: center;
+          width: 100%;
+          margin-bottom: 40px;
+          display: inline-flex  
+          }
+
+        @media screen and (min-width:1200px) {
+          justify-content: center;
         width: 100%;
         margin-bottom: 50px;
-        display: inline-flex
+        display: inline-flex  
+        }
+        
     };
 
     &__item {
@@ -20,6 +34,10 @@
 
     &__item:not(:last-child) {
         margin-right: 8px;
+        @media screen and (max-width:768px) {
+           margin-bottom: 15px;  
+        }
+       
     };
 
     &__button{@extend .button }

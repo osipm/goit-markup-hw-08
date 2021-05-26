@@ -1,5 +1,11 @@
 .portfolio {
-    @include section;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width:1200px) {
+      @include section;      
+    }
+    
 
     &__container{@extend .container;};
 
@@ -9,9 +15,16 @@
 
     &__item {
         @include item;
-        flex-basis: calc((100% - 3 * 30px) / 3);
+        flex-basis: 100%;
         background: var(--main-title-cl);
         box-sizing: border-box;
+
+        @media screen and (min-width:768px) {
+            flex-basis: calc((100% - 2 * 30px) / 2);     
+          }
+        @media screen and (min-width:1200px) {
+            flex-basis: calc((100% - 3 * 30px) / 3);     
+          }
     };
 
     
