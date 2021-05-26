@@ -1,0 +1,42 @@
+.socials-icon {
+    display: inline-flex;
+    
+    &__item:not(:last-child) {
+    margin-right: 10px;};
+
+    &__icon {
+        width: 20px;
+        height: 20px;
+        fill: var(--icon-svg-cl);
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    };
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background-color: var(--main-title-cl);
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    };
+
+    &__link:hover &__icon,
+    &__link:focus &__icon {
+        fill: var(--main-title-cl);
+    };
+
+    &__link:hover,
+    &__link:focus {
+        background-color: var(--link-cl);
+    };
+}
+
+
+
+
+
+
+
+

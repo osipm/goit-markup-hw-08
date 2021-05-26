@@ -1,0 +1,49 @@
+.feature {
+    &__container {
+        @extend .container };
+
+    @include section;
+
+    &__list {
+        @include card-set
+    };
+
+    &__item {
+        @include item;
+        flex-basis: 100%;
+        text-align: left;
+
+        @media screen and (min-width: 768px) {
+           flex-basis: calc((100% - 2 * 30px) / 2);
+        }
+
+        @media screen and (min-width: 1200px){
+            flex-basis: calc((100% - 4 * 30px) / 4);
+        }
+
+
+
+    };
+
+    
+    &__blok {
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px;
+        background-color: var(--gray-bg);
+        border-radius: 4px;
+        margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+            width: 270px;}
+    };
+
+    &__icon {
+        width: 65px;
+        height: 70px;
+        fill: var(--title-cl);
+        border-radius: 4px;
+    };
+}

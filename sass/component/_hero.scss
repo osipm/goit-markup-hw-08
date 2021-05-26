@@ -1,0 +1,39 @@
+.hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../imeges/fon.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    text-align: center;
+
+    @media screen and (min-width:1200px) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+
+    &__container {
+        padding-left: 15px;
+        padding-right: 15px;
+        };
+
+    &__title {
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.61;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--main-title-cl);
+        max-width: 696px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+
+        @media screen and (min-width: 1200px) {
+            font-size: 44px;
+            line-height: 1.36;
+        }
+    };
+
+}

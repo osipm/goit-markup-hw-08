@@ -1,0 +1,22 @@
+.address {
+    font-style: inherit;
+
+    &__list {
+        display: block;
+    };
+
+    &__contacts {
+        color: rgba(255, 255, 255, 0.6);
+    };
+
+    &__link {
+        color: var(--main-title-cl);
+    };
+
+    &__item {
+        margin-bottom: 9px;
+    };
+
+    
+}
+

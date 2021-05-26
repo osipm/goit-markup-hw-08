@@ -1,0 +1,24 @@
+.header {
+    border: 1px solid #ECECEC;
+    padding: 16px 15px 16px 15px;
+    display: flex;
+    align-items: center;
+     @media screen and (max-width: 768px){
+    justify-content: space-between;}
+
+    @media screen and (min-width: 768px) {
+display: block;
+        padding-top: 24px;
+        padding-bottom: 25px;
+    }
+
+    &__container {
+        @media screen and (min-width: 768px) {
+            
+            display: flex;
+            align-items: center;}
+
+        }
+
+
+    }

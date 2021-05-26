@@ -1,0 +1,28 @@
+.filtr{
+    &__list {
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 50px;
+        display: inline-flex
+    };
+
+    &__item {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.62;
+        text-align: center;
+        color: var(--title-cl);
+        border: 1px solid var(--border);
+        box-sizing: border-box;
+        background: var(--gray-bg);
+        border-radius: 4px;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 8px;
+    };
+
+    &__button{@extend .button }
+
+    
+}

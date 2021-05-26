@@ -1,0 +1,166 @@
+.footer {
+    background-color: var(--blak-bg);
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__container {
+        @extend .container;
+
+        @media screen and (min-width:1200px) {
+            display: flex;
+            align-items: baseline;
+        }
+
+    }
+
+    ;
+&__d { 
+    @media screen and (min-width:768px) {
+    display: flex;
+justify-content: space-around;
+}}
+    
+    
+
+    &__link {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    ;
+
+
+    &__icon {
+        fill: var(--main-title-cl);
+    }
+
+    ;
+
+    &__title {
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: uppercase;
+        color: var(--main-title-cl);
+        margin-bottom: 20px;
+
+        @media screen and (min-width:1200px) {
+            text-align: left;
+        }
+
+    }
+
+    ;
+
+
+    &__contacts{
+        margin-bottom: 60px;
+        text-align: center;
+
+        @media screen and (min-width:1200px) {
+            margin-right: 70px;
+            text-align: left;
+            margin-bottom: 0;
+        }
+    }
+
+    ;
+
+
+
+    &__studio {
+        color: var(--main-title-cl)
+    }
+
+    ;
+
+    &__logo {
+        display: inline-block;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    ;
+
+    &__mail-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media screen and (min-width:1200px) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    ;
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        
+        @media screen and (min-width:1200px) {
+            min-width: 570px;
+            margin-left: auto;
+        }
+
+    }
+
+    ;
+
+    &__label {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    ;
+
+    &__mg-form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 0;
+    }
+
+    ;
+
+    &__mg-form:not(:last-child) {
+        @media screen and (min-width:1200px){
+        margin-right: 12px;}
+    }
+
+    ;
+
+    &__input {
+        margin-bottom: 20px;
+        height: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-sizing: border-box;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        background-color: transparent;
+        outline: 0;
+
+        font-size: 16px;
+        line-height: 1.25px;
+        color: rgba(255, 255, 255, 0.6);
+        padding: 16px 15px;
+
+@media screen and (min-width:480px) {
+    width: 450px;
+   }
+
+        @media screen and (min-width:1200px) {
+            width: 358px;
+            margin-bottom: 0;
+            
+        }
+    }
+
+    ;
+
+    &__input::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    ;
+
+}
