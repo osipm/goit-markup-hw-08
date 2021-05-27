@@ -205,7 +205,16 @@
         <ul class="servis__list">
           <li class="servis__item">
             <div class="servis__blok">
-              <img src="./imeges/box1.jpg" alt="box1" width="370" height="294" />
+
+              <picture>
+                <source
+                  srcset="./imeges/desk/img_servis_desk1x.jpg 1x, ./imeges/desk/img_servis_desk2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <img src="./imeges/box1.jpg" alt="box1" width="370" height="294" />
+              </picture>
+
               <div class="servis__box">
                 <p class="servis__icon">десктопные приложения</p>
               </div>
@@ -213,15 +222,29 @@
           </li>
           <li class="servis__item">
             <div class="servis__blok">
-              <img src="./imeges/box2.jpg" alt="box2" width="370" height="294" />
-              <div class="servis__box">
+              <picture>
+                <source
+                  srcset="./imeges/desk/img_servis2_desk1x.jpg 1x, ./imeges/desk/img_servis2_desk2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <img src="./imeges/box2.jpg" alt="box2" width="370" height="294" />
+              </picture>
+               <div class="servis__box">
                 <p class="servis__icon">мобильные приложения</p>
               </div>
             </div>
           </li>
           <li class="servis__item">
             <div class="servis__blok">
-              <img src="./imeges/box3.jpg" alt="box3" width="370" height="294" />
+              <picture>
+                <source
+                  srcset="./imeges/desk/img_servis3_desk1x.jpg 1x, ./imeges/desk/img_servis3_desk2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <img src="./imeges/box.jpg" alt="box2" width="370" height="294" />
+              </picture>
               <div class="servis__box">
                 <p class="servis__icon">дизайнерские решения</p>
               </div>
@@ -238,8 +261,25 @@
         <h2 class="title-section">Наша команда</h2>
         <ul class="team__list">
           <li class="team__item">
-            <img src="./imeges/igor.jpg" alt="Игорь Демьяненко" width="270" height="260" />
-            <div class="team__expert">
+            <picture>
+              <source
+                srcset="./imeges/desk/img_igor_desk1x.jpg 1x, ./imeges/desk/img_igor_desk2x.jpg 2x"
+                media="(min-width: 1200px)"
+                type="image/jpeg"
+              />
+              <source
+                srcset="./imeges/tab/img_tab_igor1x.jpg 1x, ./imeges/tab/img_tab_igor2x.jpg 2x"
+                media="(min-width: 768px)"
+                type="image/jpeg"
+              />
+              <source
+                srcset="./imeges/mobile/mobile_igor1x.jpg 1x, ./imeges/mobile/mobile_igor2x.jpg 2x"
+                media="(max-width: 767.98px)"
+                type="image/jpeg"
+              />
+              <img src="./imeges/igor.jpg" alt="Игорь Демьяненко" width="270" height="260" />
+            </picture>
+             <div class="team__expert">
               <h3 class="title-text">Игорь Демьяненко</h3>
               <p lang="en" class="team__text">Product Designer</p>
               <ul class="socials-icon">
@@ -275,7 +315,24 @@
             </div>
           </li>
           <li class="team__item">
-            <img src="./imeges/olga.jpg" alt="Ольга Репина" width="270" height="260" />
+            <picture>
+              <source
+                srcset="./imeges/desk/img_olga_desk1x.jpg 1x, ./imeges/desk/img_olga_desk2x.jpg 2x"
+                media="(min-width: 1200px)"
+                type="image/jpeg"
+              />
+              <source
+                srcset="./imeges/tab/img_tab_olga1x.jpg 1x, ./imeges/tab/img_tab_olga2x.jpg 2x"
+                media="(min-width: 768px)"
+                type="image/jpeg"
+              />
+              <source
+                srcset="./imeges/mobile/mobile_olga1x.jpg 1x, ./imeges/mobile/mobile_olga2x.jpg 2x"
+                media="(max-width: 767.98px)"
+                type="image/jpeg"
+              />
+              <img src="./imeges/olga.jpg" alt="Ольга Репина" width="270" height="260" />
+            </picture>            
             <div class="team__expert">
               <h3 class="title-text">Ольга Репина</h3>
               <p lang="en" class="team__text">Frontend Developer</p>
@@ -312,7 +369,24 @@
             </div>
           </li>
           <li class="team__item">
-            <img src="./imeges/nikolay.jpg" alt="Николай Тарасов" width="270" height="260" />
+            <picture>
+              <source
+                srcset="./imeges/desk/img_nikolay_desk1x.jpg 1x, ./imeges/desk/img_nikolay_desk2x.jpg 2x"
+                media="(min-width: 1200px)"
+                type="image/jpeg"
+              />
+              <source
+                srcset="./imeges/tab/img_tab_nikolay1x.jpg 1x, ./imeges/tab/img_tab_nikolay2x.jpg 2x"
+                media="(min-width: 768px)"
+                type="image/jpeg"
+              />
+              <source
+                srcset="./imeges/mobile/mobile_nikolay1x.jpg 1x, ./imeges/mobile/mobile_nikolay2x.jpg 2x"
+                media="(max-width: 767.98px)"
+                type="image/jpeg"
+              />
+              <img src="./imeges/nikolay.jpg" alt="Николай Тарасов" width="270" height="260" />
+            </picture>
             <div class="team__expert">
               <h3 class="title-text">Николай Тарасов</h3>
               <p lang="en" class="team__text">Marketing</p>
@@ -349,8 +423,25 @@
             </div>
           </li>
           <li class="team__item">
-            <img src="./imeges/mihail.jpg" alt="Михаил Ермаков" width="270" height="260" />
-            <div class="team__expert">
+            <picture>
+              <source
+                srcset="./imeges/desk/img_miha_desk1x.jpg 1x, ./imeges/desk/img_miha_desk2x.jpg 2x"
+                media="(min-width: 1200px)"
+                type="image/jpeg"
+              />
+              <source
+                srcset="./imeges/tab/img_tab_miha1x.jpg 1x, ./imeges/tab/img_tab_miha2x.jpg 2x"
+                media="(min-width: 768px)"
+                type="image/jpeg"
+              />
+              <source
+                srcset="./imeges/mobile/mobile_miha1x.jpg 1x, ./imeges/mobile/mobile_miha2x.jpg 2x"
+                media="(max-width: 767.98px)"
+                type="image/jpeg"
+              />
+              <img src="./imeges/mihail.jpg" alt="Михаил Ермаков" width="270" height="260" />
+            </picture>
+             <div class="team__expert">
               <h3 class="title-text">Михаил Ермаков</h3>
               <p lang="en" class="team__text">UI Designer</p>
               <ul class="socials-icon">

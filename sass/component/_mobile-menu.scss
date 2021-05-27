@@ -109,6 +109,7 @@ body.is-mobile-menu-open{
     margin: auto;
 }
 
+
 .is-open .menu-btn-icon-menu {
     display: none;
 }
@@ -118,5 +119,6 @@ body.is-mobile-menu-open{
 
     .is-open & {
         display: block;
+            }
+
     }
-}
