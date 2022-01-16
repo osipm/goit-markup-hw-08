@@ -500,6 +500,10 @@ a:focus {
   box-sizing: border-box;
   border-radius: 50%;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 .close-icon {
